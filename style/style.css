@@ -1,0 +1,120 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: radial-gradient(ellipse at 0 0, #fff8ce, #ffb61d)
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 82.75em;
+  margin: auto;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 400;
+}
+
+.header {
+  padding: 5em 0;
+}
+
+.main {
+  display: flex;
+  gap: 2rem;
+}
+
+.main>* {
+  flex: 1 0 0;
+}
+
+.main-title {
+  font-size: 4em;
+}
+
+.main-title_destaque {
+  text-transform: uppercase;
+  color: red;
+}
+
+.main-form {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-form input {
+  padding: 1em;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.main-form input[type="text"] {
+  background-color: transparent;
+  outline: none;
+}
+
+.main-form input[type="text"]::placeholder {
+  color: #28293e;
+}
+
+.main-form input[type="submit"] {
+  background-color: hsl(200, 80%, 30%);
+  color: #fff;
+}
+
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.animation img {
+  position: absolute;
+}
+
+.animation img:nth-child(1) {
+  animation: mexer 2.5s infinite 2s alternate;
+  left: -25px;
+  top: 100px;
+}
+
+.animation img:nth-child(2) {
+  animation: mexer 2.5s infinite 2.5s alternate;
+  right: 40px;
+  top: -60px;
+}
+
+.animation img:nth-child(3) {
+  animation: mexer ease-in 2.5s infinite 1s alternate;
+}
+
+.animation img:nth-child(4) {
+  animation: mexer ease-out 2.5s infinite 2s alternate;
+  left: 110px;
+  bottom: -80px;
+}
+
+.animation img:nth-child(5) {
+  animation: mexer ease-in 2.5s infinite 3s alternate;
+  left: 120px;
+  top: -140px;
+}
+
+.animation img:nth-child(6) {
+  animation: mexer 2.5s infinite 3s alternate;
+  right: 10px;
+  bottom: 20px;
+}
+
+@keyframes mexer {
+  from {}
+
+  to {
+    transform: translate(10px, 40px);
+  }
+}
